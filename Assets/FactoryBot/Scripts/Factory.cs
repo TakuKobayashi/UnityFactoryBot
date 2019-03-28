@@ -7,7 +7,7 @@ namespace FactoryBot{
     {
         public static DefinedFactory<T> Define<T>(Dictionary<string, object> instanceParams = default(Dictionary<string, object>))
         {
-            return new DefinedFactory(instanceParams);
+            return new DefinedFactory<T>(instanceParams);
         }
 
         public static T Build<T>(Dictionary<string, object> instanceParams = default(Dictionary<string, object>))
